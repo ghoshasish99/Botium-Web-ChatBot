@@ -1,0 +1,26 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "WebdriverIO",
+      "CLEANUPTEMPDIR": true,
+      "CONTAINERMODE": "webdriverio",
+      "WEBDRIVERIO_OPTIONS": {
+        "desiredCapabilities": {
+          "browserName": "chrome"
+        },
+        "protocol": "http",
+        "host": "localhost",
+        "port": "4444",
+        "path": "/wd/hub"
+      },
+      "WEBDRIVERIO_URL": "https://seattleballooning.com/",
+      "WEBDRIVERIO_SCREENSHOTS": "onbotsays",
+      "WEBDRIVERIO_START_CHROMEDRIVER": true,
+      "WEBDRIVERIO_OUTPUT_ELEMENT_DEBUG_HTML": true,
+      "WEBDRIVERIO_OPENBOT": "./helper/openbot",
+      "WEBDRIVERIO_OPENBOTPAUSE": 10000,
+      "WEBDRIVERIO_INPUT_ELEMENT": "//*[@id='drift-widget-composer-input']",    
+      "WEBDRIVERIO_OUTPUT_ELEMENT": "//div[@class='drift-widget-message--box drift-widget-message--HTML drift-widget-message--bot']/div"
+    }
+  }
+}

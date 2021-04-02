@@ -1,0 +1,177 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-02T17:00:17.231Z",
+    "end": "2021-04-02T17:01:07.014Z",
+    "duration": 49783,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "442a88cb-3d41-4c52-b39c-01bb3a6abf25",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+          "title": "WebdriverIO",
+          "fullFile": "C:\\Users\\LA56QS\\Experiments\\ChatBot-Testing\\Botium\\spec\\botium.spec.js",
+          "file": "\\spec\\botium.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"WebdriverIO\"",
+              "fullTitle": "WebdriverIO \"before all\" hook in \"WebdriverIO\"",
+              "timedOut": false,
+              "duration": 2994,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(timeout)\nbb.beforeAll().then(() => done()).catch(done)",
+              "err": {},
+              "uuid": "246312ed-e968-4879-b665-07dfa07a2364",
+              "parentUUID": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook in \"WebdriverIO\"",
+              "fullTitle": "WebdriverIO \"before each\" hook in \"WebdriverIO\"",
+              "timedOut": false,
+              "duration": 39430,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(timeout)\nbb.beforeEach().then(() => done()).catch(done)",
+              "err": {},
+              "uuid": "57008ab7-6dac-496b-a05b-800806e4c56a",
+              "parentUUID": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"WebdriverIO\"",
+              "fullTitle": "WebdriverIO \"after all\" hook in \"WebdriverIO\"",
+              "timedOut": false,
+              "duration": 100,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(timeout)\nbb.afterAll().then(() => done()).catch(done)",
+              "err": {},
+              "uuid": "ef45fb52-8ffe-4188-872f-c74dd6f2e14f",
+              "parentUUID": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook in \"WebdriverIO\"",
+              "fullTitle": "WebdriverIO \"after each\" hook in \"WebdriverIO\"",
+              "timedOut": false,
+              "duration": 2353,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.timeout(timeout)\nbb.afterEach().then(() => done()).catch(done)",
+              "err": {},
+              "uuid": "9dd024f2-3b26-4b96-a630-104f72cd170a",
+              "parentUUID": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Greetings",
+              "fullTitle": "WebdriverIO Greetings",
+              "timedOut": false,
+              "duration": 4892,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if (this.container) {\n  debug(`running testcase${convo.header.toString()}`)\n  convo.Run(this.container)\n    .then(() => {\n      debug(`Test Case \"${convo.header.name}\" ready, calling done function.`)\n      testcaseDone()\n    })\n    .catch((err) => {\n      debug(`Test Case \"${convo.header.name}\" failed: ${util.inspect(err)}`)\n      testcaseDone(this.wrapBotiumError(err))\n    })\n} else {\n  testcaseDone(new Error('Botium Initialization failed. Please see error messages above (enable debug logging).'))\n}",
+              "err": {},
+              "uuid": "0fdf4a59-a6e4-49c3-b77b-f705ab88e1bb",
+              "parentUUID": "35651b2a-8566-4c24-964b-cb5a5d4bcba4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fdf4a59-a6e4-49c3-b77b-f705ab88e1bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4892,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "ExecutionReport",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report",
+        "reportFilename": "ExecutionReport"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

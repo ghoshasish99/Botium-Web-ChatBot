@@ -1,0 +1,30 @@
+{
+  "name": "botium",
+  "version": "1.0.0",
+  "description": "Botium",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter mochawesome --reporter-options reportDir=report,reportFilename=ExecutionReport spec",
+    "mocha": "mocha spec"
+  },
+  "author": "Ashish Ghosh",
+  "license": "ISC",
+  "devDependencies": {
+    "botium-bindings": "^2.1.5",
+    "botium-cli": "^1.0.7",
+    "botium-connector-echo": "latest",
+    "botium-connector-webdriverio": "^0.3.7",
+    "chromedriver": "^89.0.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2"
+  },
+  "botium": {
+    "convodirs": [
+      "spec/convo"
+    ],
+    "expandConvos": true,
+    "expandUtterancesToConvos": false,
+    "expandScriptingMemoryToConvos": false
+  },
+  "dependencies": {}
+}

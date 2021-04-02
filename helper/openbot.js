@@ -1,0 +1,21 @@
+module.exports = async (container, browser) => {
+    const ccBtn = await browser.$('//*[@id="cookie_action_close_header"]')
+    await ccBtn.waitForClickable({ timeout: 20000 })
+    await ccBtn.click()
+    await browser.pause(10000)
+    const frame1 = await browser.$('//iframe[@class="drift-frame-controller"]')
+    await frame1.waitForExist({ timeout: 20000 })
+    await browser.switchToFrame(frame1)
+    const startChat  = await browser.$('//div[@class="drift-widget-recipient-avatar square drift-controller-icon--avatar"]/div')
+    await startChat.waitForClickable({ timeout: 20000 })
+    await startChat.click()
+    await browser.pause(10000)
+    browser.switchToFrame(null)
+    
+    const frame2 = await browser.$('//iframe[@class="drift-frame-chat"]')
+    await frame2.waitForExist({ timeout: 20000 })
+    await browser.switchToFrame(frame2)
+    const accept  = await browser.$('//button/span[text()="Yes, I agree"]')
+    await accept.waitForClickable({ timeout: 20000 })
+    await accept.click()
+  }
