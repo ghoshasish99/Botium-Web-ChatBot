@@ -1,0 +1,19 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "WebdriverIO",
+      "CLEANUPTEMPDIR": true,
+      "CONTAINERMODE": "webdriverio",
+      "WEBDRIVERIO_OPTIONS": {
+        "capabilities": {
+          "browserName": "chrome"
+        },
+        "username":"",
+        "accessKey": "",        
+        "protocol": "https",
+        "hostname": "ondemand.eu-central-1.saucelabs.com",
+        "port": 443
+      }
+    }
+  }
+}

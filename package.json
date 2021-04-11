@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter mochawesome --reporter-options reportDir=report,reportFilename=ExecutionReport spec",
-    "mocha": "mocha spec"
+    "saucelabs": "cross-env BOTIUM_CONFIG=botium-saucelabs.json mocha --reporter mochawesome --reporter-options reportDir=report,reportFilename=ExecutionReport spec"
   },
   "author": "Ashish Ghosh",
   "license": "ISC",
@@ -16,7 +16,8 @@
     "botium-connector-webdriverio": "^0.3.7",
     "chromedriver": "^89.0.0",
     "mocha": "^8.3.2",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.2.2",
+    "cross-env": "^7.0.3"
   },
   "botium": {
     "convodirs": [

@@ -6,12 +6,14 @@
       "CONTAINERMODE": "webdriverio",
       "WEBDRIVERIO_OPTIONS": {
         "desiredCapabilities": {
-          "browserName": "chrome"
+          "browserName": "Chrome",
+          "__browserName": "chrome",
+          "username":"ghoshasish99",
+          "accessKey": "57e08031-3841-46ac-b8b3-8b55a86a86ff"
         },
-        "protocol": "http",
-        "host": "localhost",
-        "port": "4444",
-        "path": "/wd/hub"
+        "protocol": "https",
+        "hostname": "ondemand.saucelabs.com",
+        "port": 443
       },
       "WEBDRIVERIO_URL": "https://seattleballooning.com/",
       "WEBDRIVERIO_SCREENSHOTS": "onbotsays",
